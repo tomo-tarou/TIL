@@ -102,11 +102,28 @@ GROUOP BY purchased_at;
 ```
 GROUP BY カラム名1, カラム名2, ...
 ```
-- GROUP BYはWHEREとも併用することができ、その場合はWHEREの後に書く（優先順位は、上から下）
+- GROUP BYはWHEREとも併用することができ、その場合はWHEREの後に書く（優先順位は、上から下の順で実行される）
 
-| （検索）条件 | WHERE |
+| 検索 | WHERE |
 | :---: | :--- |
 | グループ化 | GROUP BY |
 | 集計関数 | COUNT ・ SUM ・ AVG ・ MAX ・ MIN |
 
+### 「HAVING」
+- GROUP BYでグループ化したデータを更に絞り込みたい場合には、HAVINGを使用する
+```
+GROUP BY カラム名
+HAVING 条件
+```
+- グループ化した後のデータを絞り込む際、WHEREではなくHAVINGを使うのは、SQLの各コマンドが以下の順番で実行されていくため。図のようにWHEREはまず最初に、そのあとにGROUP BYと関数が実行され、その後にHAVINGが実行される。
 
+| 検索 | WHERE |
+| :---: | :--- |
+| グループ化 | GROUP BY |
+| 集計関数 | COUNT・SUM・AVG・MAX・MIN |
+| 絞り込み | HAVING |
+
+## WHEREとHAVINGの違い
+- 実行順序によって、WHEREとHAVINGは検索対象に違いがある。WHEREはグループ化される前のテーブル全体を検索対象とするのに対し、HAVINGはGROUP BYによってグループ化されたデータを検索対象とする。
+## HAVINGの注意点
+- HAVINGはグループ化された後のテーブルから検索するため、条件文で使うカラムは必ずグループ化されたテーブルのカラムを使う
