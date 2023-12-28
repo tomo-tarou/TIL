@@ -1,6 +1,5 @@
 ## SQL基本
-- データベースとは、テキストや数値などのデータを保存するためのツール。”管理しやすいように整理されたデータ群のこと”
-- https://udemy.benesse.co.jp/development/system/intro-sql.html#:~:text=SQL%E3%81%A8%E3%81%AF%E3%80%81%E3%80%8CStructured%20Query,%E3%81%99%E3%82%8B%E3%81%9F%E3%82%81%E3%81%AE%E8%A8%80%E8%AA%9E%E3%81%A7%E3%81%99%E3%80%82
+- [データベースとは、テキストや数値などのデータを保存するためのツール。”管理しやすいように整理されたデータ群のこと”](https://udemy.benesse.co.jp/development/system/intro-sql.html#:~:text=SQL%E3%81%A8%E3%81%AF%E3%80%81%E3%80%8CStructured%20Query,%E3%81%99%E3%82%8B%E3%81%9F%E3%82%81%E3%81%AE%E8%A8%80%E8%AA%9E%E3%81%A7%E3%81%99%E3%80%82)
 - データベースは、左の図のような表でデータを管理している。表のことを「テーブル」、横の行のことを「レコード」と呼ぶ
 - クエリとは、データベースに送る命令（クエリ）のこと
 - SQL（Structured Query Language: 構造化問い合わせ言語）とはクエリを書くための言語。※コンピュータ言語のひとつだが、プログラミング言語ではない。
@@ -41,7 +40,7 @@ WHERE name LIKE "%プリン%";
 - 「%〇〇」とした場合、「〇〇」より前はどんな文字列にも一致するので「〇〇」で終わる文字列を検索することができる。このような検索を「後方一致」と呼ぶ。
 ### 「NOT演算子」
 - 「〇〇を含まないデータ」や「〇〇に一致しないデータ」のような条件でデータを取得したい場合は「否定」を意味する「NOT演算子」を使用する
-### NULL
+### 「NULL」
 - 中身がなにか分からないということを示し、何のデータも保存されていない場合などにNULLとなる
 - NULLのデータを取得するためには「〜がNULLである」という意味になる、「IS NULL」を用いる
 ```
@@ -191,3 +190,35 @@ ON players.country_id = countries.id
 LEFT JOIN teams
 ON players.previous_team_id = teams.id;
 ```
+## SQLのデータ操作（追加・更新・削除）
+### 「INSERT」
+- テーブルにレコードを挿入したい時はINSERTを使用
+- 多くの場合、idカラムにはAUTO INCREMENT（自動で増加する）という機能が使われるのでレコードに値を追加する際はidカラムは省略できる
+```
+INSERT INTO 追加したいテーブル名 (処理を加えたいカラム名, 処理を加えたいカラム名） VALUES(追加したい値, 追懐したい値)
+
+例: INSERT INTO students (name, course) VALUES ("Kate", "Java");
+```
+### 「UPDATE」
+- データを更新したい時はUPDATEを使用
+- 複数変更したいカラムがある場合、コンマで区切る
+- 更新するレコードをWHEREで指定する
+#### UPDATEの注意点
+- WHEREで更新するレコードを指定しないとカラム内の全データが更新されてしまう…！！
+- UPDATE実行後はデータを戻すことができない。実行前に一度SELECTを実行して、操作するデータを確認する習慣をつける
+```
+UPDATE 変更したいテーブル名 SET 変更したいカラム名 = 変更したい値, 変更したいカラム名 = 変更したい値 WHERE id = 更新したいレコードの値;
+
+例: UPDATE students SET name = "Jordan", course = "HTML" WHERE id = 6;
+```
+
+### 「DELETE」
+- レコードを削除するときはDELETEを使用
+- UPDATEと同様にクエリ実行後はレコードを元に戻すことができないので、SELECTでレコードを確認してから削除を行うこと！！
+- 削除するレコードをWHEREで指定する
+- #### DELETEの注意点
+- DELETEで更新するレコードを指定しないとカラム内の全データが削除されてしまう…！！
+```
+DELETE FROM 変更したいテーブル名 WHERE id = 削除したいレコードの値
+```
+https://gyazo.com/84afc25cccbb69a2c880f86982fcfd74
