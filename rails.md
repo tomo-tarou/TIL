@@ -37,3 +37,13 @@ validates :検証するカラム名, {presence: true]
 - flashはいろいろな箇所で共通で使っていくのでapplication.html.erbに書く
 
 ![スクリーンショット 2023-12-31 20 23 27](https://github.com/ti-hiro/TIL/assets/154767207/e773dc28-6776-4bbb-ac02-c2bc26b36fa1)
+
+- <input>タグに「type="file"」を追加することで、右の図のように画像ファイルを選択するボタンを表示することが出来る
+- 画像の送信は特殊なので、form_tagに{multipart: true}を追加する必要がある
+
+### 変数session
+- ページを移動してもユーザー情報を保持し続けるために、sessionという特殊な変数を使用する
+- sessionに代入された値は、ブラウザ(InternetExplorer, GoogleChrome等)に保存される
+- sessionに値を代入すると、ブラウザはそれ以降のアクセスでsessionの値をRailsに送信する
+
+![スクリーンショット 2024-01-01 18 52 28](https://github.com/ti-hiro/TIL/assets/154767207/da8cfe45-4ef2-49eb-942f-a7d6f9286979)
