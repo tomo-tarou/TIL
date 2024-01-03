@@ -52,3 +52,9 @@ validates :検証するカラム名, {presence: true]
 - インスタンスメソッド内で、selfはそのインスタンス自身を指す（インスタンスメソッドは、インスタンスに対して呼び出すメソッドでモデル内に定義できる）
 - HTML要素に対してlink_toメソッドを使うには、少し異なる書き方をする必要があり
   - <%= link_to(URL) do %>と<% end %>の間にHTML要素を書くことで、その部分をリンクにすることができる
+- countメソッドは配列の要素数を取得するメソッドですが、テーブルのデータ数を取得するためにも利用することができる
+- bcryptのgemをインストールするとpasswordをハッシュ化できる。（has_secure_passwordというメソッドが使えるようになる）
+- password_digestカラムにハッシュ化されたパスワードを保存するためには、今まで通りpasswordに値を代入する。
+こうすることで、has_secure_passwordによってpasswordに代入された値がハッシュ化され、password_digestカラムに保存される。
+- has_secure_passwordメソッドを有効にすると、authenticateメソッドを使えるようになる。authenticateメソッドは渡された引数をハッシュ化し、password_digestの値と一致するかどうかを判定してくれる。
+- authenticateメソッドはhas_secure_passwordメソッドが有効になっているモデルのインスタンスで使うことが可能
