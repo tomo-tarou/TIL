@@ -122,3 +122,28 @@ class App extends React.Component {
 #### コンポーネントを何度も呼び出すには
 ![スクリーンショット 2024-01-04 17 06 29](https://github.com/ti-hiro/TIL/assets/154767207/181f0b44-360e-4757-a89d-c76409875f2f)
 ![スクリーンショット 2024-01-04 17 06 56](https://github.com/ti-hiro/TIL/assets/154767207/8f0c3acc-27ac-4f8f-8062-37f5801f3e33)
+
+### コンポーネントの作り方
+![スクリーンショット 2024-01-04 21 33 18](https://github.com/ti-hiro/TIL/assets/154767207/bc2850a7-df36-43dc-a33b-8dbd9d21cf33)
+### コンポーネントの表示
+![スクリーンショット 2024-01-04 21 34 28](https://github.com/ti-hiro/TIL/assets/154767207/75b634c6-5842-4f91-aa32-25ae4ad1df2b)
+### propsを渡す
+![スクリーンショット 2024-01-04 21 35 32](https://github.com/ti-hiro/TIL/assets/154767207/ec8437c8-78f9-46cc-8813-e612c5fe3b2e)
+### propsを受け取る
+![スクリーンショット 2024-01-04 21 36 14](https://github.com/ti-hiro/TIL/assets/154767207/90e6461f-8320-433d-959c-01a471a0c4a2)
+
+### モーダルの作成
+![スクリーンショット 2024-01-04 21 37 19](https://github.com/ti-hiro/TIL/assets/154767207/cd04956d-89da-4ae9-a49f-68635cfa5152)
+### モーダルの表示・非表示
+![スクリーンショット 2024-01-04 21 40 31](https://github.com/ti-hiro/TIL/assets/154767207/d824705a-6cd7-48e5-b5fa-cd91180dc2f5)
+### stateの定義
+![スクリーンショット 2024-01-04 21 41 35](https://github.com/ti-hiro/TIL/assets/154767207/2a9afd89-1f13-42f2-baca-20bb365573f9)
+### JSXとif文
+![スクリーンショット 2024-01-04 21 43 56](https://github.com/ti-hiro/TIL/assets/154767207/12f70b6d-904a-4ad5-8b90-0279b52750c8)
+![スクリーンショット 2024-01-04 21 44 08](https://github.com/ti-hiro/TIL/assets/154767207/d9ce7f14-8d94-45ce-89aa-876c24ccbd0f)
+### モーダルを表示する
+![スクリーンショット 2024-01-04 21 44 56](https://github.com/ti-hiro/TIL/assets/154767207/67190891-ca90-48e0-bc7b-f5934e20f55a)
+### モーダルを非表示にする
+![スクリーンショット 2024-01-04 21 46 05](https://github.com/ti-hiro/TIL/assets/154767207/f599b5bf-7544-44de-a3e7-d4c58a0a18f8)
+
+
