@@ -75,6 +75,43 @@ const app = express(); ←　expressを使用するための準備
 ### デバッグとは
 - バグとは意図した通りにプログラムが動かないこと
 - デバッグとはバグの原因を見つけて直すこと。「バグを取り除く」こと
+
 ![スクリーンショット 2024-01-08 19 24 59](https://github.com/ti-hiro/TIL/assets/154767207/9ce73a2d-6391-4318-bf56-bad8aca99396)
 ![スクリーンショット 2024-01-08 19 34 30](https://github.com/ti-hiro/TIL/assets/154767207/b3af4ae9-c119-49ee-884d-a82c9104db35)
 ![スクリーンショット 2024-01-08 19 36 35](https://github.com/ti-hiro/TIL/assets/154767207/f209824a-a89d-46bf-82a2-8877873c770b)
+
+### ログイン機能の作成手順
+![スクリーンショット 2024-01-08 22 40 36](https://github.com/ti-hiro/TIL/assets/154767207/d6d3d79f-40b4-4a56-a406-b6a042eda738)
+#### ログイン機能の作成
+- ログイン画面を作成して、表示されるようにする（ログイン用のファイル（login.ejs）とルーティングを用意する）
+- login.ejsに、フォームを作成する
+- ログイン画面へのリンクを作成
+
+#### ユーザー認証
+![スクリーンショット 2024-01-08 22 49 24](https://github.com/ti-hiro/TIL/assets/154767207/50ffbe4e-debd-4ec1-bede-edbd4c43bcc0)
+![スクリーンショット 2024-01-08 22 49 49](https://github.com/ti-hiro/TIL/assets/154767207/0241f938-693c-4f04-a718-a453bb47c72d)
+- ユーザー認証は、端的に言うと、「本人確認」
+- ユーザー認証の処理を作る
+
+![スクリーンショット 2024-01-08 22 47 10](https://github.com/ti-hiro/TIL/assets/154767207/60582bff-a309-4d49-b920-dc12afc38ac7)
+![スクリーンショット 2024-01-08 22 47 53](https://github.com/ti-hiro/TIL/assets/154767207/8d33ebb1-7e6e-4c10-9b61-50de7bc3abfa)
+![スクリーンショット 2024-01-08 22 50 45](https://github.com/ti-hiro/TIL/assets/154767207/f736f3ef-7c57-4eca-ae13-685d49b15235)
+![スクリーンショット 2024-01-08 22 51 26](https://github.com/ti-hiro/TIL/assets/154767207/13647d72-31a4-4278-b5a5-964a66563465)
+![スクリーンショット 2024-01-08 22 52 26](https://github.com/ti-hiro/TIL/assets/154767207/4d170e91-e1f6-4dac-8cfe-2d721af0b796)
+
+#### セッション管理
+![スクリーンショット 2024-01-08 22 54 02](https://github.com/ti-hiro/TIL/assets/154767207/ad594d42-0e89-4c1f-9f7e-f13ef7496140)
+![スクリーンショット 2024-01-08 22 54 31](https://github.com/ti-hiro/TIL/assets/154767207/b99c576f-fd2d-4312-b384-bca54032f56a)
+![スクリーンショット 2024-01-08 22 57 23](https://github.com/ti-hiro/TIL/assets/154767207/7ba9e805-98e6-44a0-9a39-7fadc63fbc72)
+![スクリーンショット 2024-01-08 23 05 25](https://github.com/ti-hiro/TIL/assets/154767207/4e17bddd-071e-475b-af4a-83a1e7c6a7df)
+![スクリーンショット 2024-01-08 23 06 00](https://github.com/ti-hiro/TIL/assets/154767207/febab26e-95df-4371-b0de-cee3369dbdfe)
+![スクリーンショット 2024-01-08 23 06 33](https://github.com/ti-hiro/TIL/assets/154767207/5fc7231d-b4d2-4cb2-8c01-58c397c![スクリーンショット 2024-01-08 23 08 31](https://github.com/ti-hiro/TIL/assets/154767207/22266dcb-0020-40c3-bda7-972b74e9b187)
+dc5ab)
+![スクリーンショット 2024-01-08 23 07 44](https://github.com/ti-hiro/TIL/assets/154767207/108ec5c1-b4b8-4be2-8cee-1623a2b8e7a1)
+![スクリーンショット 2024-01-08 23 08 57](https://github.com/ti-hiro/TIL/assets/154767207/3c1f6685-7238-4c86-8d92-4d079429fbc6)
+![スクリーンショット 2024-01-08 23 09 25](https://github.com/ti-hiro/TIL/assets/154767207/89e8c1e5-d590-478c-915e-4d8e632475ab)
+![スクリーンショット 2024-01-08 23 10 00](https://github.com/ti-hiro/TIL/assets/154767207/c7aee279-2380-4159-a0ee-dcb3276ee672)
+![スクリーンショット 2024-01-08 23 10 41](https://github.com/ti-hiro/TIL/assets/154767207/fe88106a-4351-4bea-b5ce-8cb50aae8d49)
+![スクリーンショット 2024-01-08 23 10 51](https://github.com/ti-hiro/TIL/assets/154767207/29384c43-3a45-473e-917d-98c1514e12cb)
+![スクリーンショット 2024-01-08 23 11 41](https://github.com/ti-hiro/TIL/assets/154767207/935beab6-c8a5-4577-9f86-e786b16382dc)
+![スクリーンショット 2024-01-08 23 12 16](https://github.com/ti-hiro/TIL/assets/154767207/749fbe13-f47b-4b2a-a30e-d1569e85450b)
