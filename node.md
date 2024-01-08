@@ -54,3 +54,21 @@ const app = express(); ←　expressを使用するための準備
 ![スクリーンショット 2024-01-08 16 14 40](https://github.com/ti-hiro/TIL/assets/154767207/2df393bc-67e2-47eb-927f-1cf7642c586c)
 ![スクリーンショット 2024-01-08 16 15 24](https://github.com/ti-hiro/TIL/assets/154767207/fc08bc4d-0b59-4b9a-92a0-39799cbdea11)
 ![スクリーンショット 2024-01-08 16 15 46](https://github.com/ti-hiro/TIL/assets/154767207/f236f326-17b1-4993-8e3d-6d1ab1b69f54)
+
+### ルートパラメータ
+- ルーティングのURLは/delete/:idのように指定する。これでURLに含まれたidを取得できるようになる。/:idの部分をルートパラメータと呼ぶ。
+
+![スクリーンショット 2024-01-08 19 08 19](https://github.com/ti-hiro/TIL/assets/154767207/85d8ef7a-dc4d-4ad0-949a-0eecd9a77791)
+![スクリーンショット 2024-01-08 19 09 12](https://github.com/ti-hiro/TIL/assets/154767207/293d1cf2-02cd-4c8f-b625-d057279edf75)
+![スクリーンショット 2024-01-08 19 09 50](https://github.com/ti-hiro/TIL/assets/154767207/519a129e-5e44-4054-b845-6e96e37f615c)
+![スクリーンショット 2024-01-08 19 16 42](https://github.com/ti-hiro/TIL/assets/154767207/41b8c0cd-ef5d-47da-9630-c58bb52ac6ce)
+![スクリーンショット 2024-01-08 19 10 25](https://github.com/ti-hiro/TIL/assets/154767207/fd492318-63ee-478a-8a3a-845989217a18)
+![スクリーンショット 2024-01-08 19 12 50](https://github.com/ti-hiro/TIL/assets/154767207/1a8d1ace-b8dc-49d7-91fe-e445d130a5d1)
+![スクリーンショット 2024-01-08 19 13 00](https://github.com/ti-hiro/TIL/assets/154767207/748c5ac9-c66e-4825-89bd-f7269503e587)
+![スクリーンショット 2024-01-08 19 14 42](https://github.com/ti-hiro/TIL/assets/154767207/50bea3ce-8f52-470e-be78-2bbaeb19862a)
+![スクリーンショット 2024-01-08 19 15 25](https://github.com/ti-hiro/TIL/assets/154767207/24a22626-ae8f-48b8-a6bf-6f30ca2f7e19)
+![スクリーンショット 2024-01-08 19 19 07](https://github.com/ti-hiro/TIL/assets/154767207/1781b35f-1b72-43ea-861f-9fba1290e49d)
+![スクリーンショット 2024-01-08 19 19 26](https://github.com/ti-hiro/TIL/assets/154767207/31082521-1d62-409a-ab07-37dd85343083)
+![スクリーンショット 2024-01-08 19 20 25](https://github.com/ti-hiro/TIL/assets/154767207/d033b655-a351-4bd6-a131-0d374c453f02)
+![スクリーンショット 2024-01-08 19 21 01](https://github.com/ti-hiro/TIL/assets/154767207/355b0450-2780-4253-948c-8ce5b38d604c)
+
