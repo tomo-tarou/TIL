@@ -72,3 +72,9 @@ const app = express(); ←　expressを使用するための準備
 ![スクリーンショット 2024-01-08 19 20 25](https://github.com/ti-hiro/TIL/assets/154767207/d033b655-a351-4bd6-a131-0d374c453f02)
 ![スクリーンショット 2024-01-08 19 21 01](https://github.com/ti-hiro/TIL/assets/154767207/355b0450-2780-4253-948c-8ce5b38d604c)
 
+### デバッグとは
+- バグとは意図した通りにプログラムが動かないこと
+- デバッグとはバグの原因を見つけて直すこと。「バグを取り除く」こと
+![スクリーンショット 2024-01-08 19 24 59](https://github.com/ti-hiro/TIL/assets/154767207/9ce73a2d-6391-4318-bf56-bad8aca99396)
+![スクリーンショット 2024-01-08 19 34 30](https://github.com/ti-hiro/TIL/assets/154767207/b3af4ae9-c119-49ee-884d-a82c9104db35)
+![スクリーンショット 2024-01-08 19 36 35](https://github.com/ti-hiro/TIL/assets/154767207/f209824a-a89d-46bf-82a2-8877873c770b)
